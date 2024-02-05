@@ -3,11 +3,6 @@ function getRandomHexColor() {
     .toString(16)
     .padStart(6, 0)}`;
 }
-function getRandomHexColor() {
-  return `#${Math.floor(Math.random() * 16777215)
-    .toString(16)
-    .padStart(6, 0)}`;
-}
 
 const userInput = document.querySelector("input");
 const createButton = document.querySelector("[data-create]");
@@ -29,7 +24,7 @@ function createBoxes(amount) {
 
   let initialBoxSize = 30;
   let boxSizeIncrement = 10;
-  let size = 30;
+ 
   for (let i = 0; i < amount; i++) {
     const box = document.createElement("div");
     box.classList.add("box");
